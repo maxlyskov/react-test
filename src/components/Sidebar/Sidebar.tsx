@@ -37,7 +37,7 @@ const Sidebar = () => {
                   />
                 ))}
                 {index !== sidebarData.length - 1 && (
-                  <div className="divider my-5 w-full h-[1px]" />
+                  <li className="divider my-5 w-full h-[1px]" />
                 )}
               </React.Fragment>
             ))}

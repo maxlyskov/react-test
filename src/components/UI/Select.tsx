@@ -19,6 +19,7 @@ const Select: React.FC<SelectProps> = ({
     name={name}
     value={value}
     onChange={onChange}
+    aria-label="Options"
     className={`border-[#A3A4AB)] border rounded-md px-3 py-2 outline-none select ${classNames}`}
   >
     {options.map((option) => (

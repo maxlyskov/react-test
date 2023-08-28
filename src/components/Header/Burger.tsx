@@ -5,6 +5,7 @@ const Burger = () => {
   const { menuOpen, toggleMenu } = useMenuContext();
   return (
     <button
+      aria-label="Burger"
       onClick={toggleMenu}
       className={`hamburger block md:hidden focus:outline-none ${
         menuOpen && "open"

@@ -43,7 +43,7 @@ export const tableData = [
   {
     title: "Daily Horoscope",
     publishDate: "Aug 28",
-    pages: ["6.png", "7.jpg"],
+    pages: ["6.png", "7.png"],
     lastModified: "Aug 10, 10:20 AM",
     status: "Live",
     liveFrom: "Aug 15, 12:00 PM",

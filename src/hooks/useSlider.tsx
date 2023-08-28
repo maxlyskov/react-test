@@ -14,7 +14,6 @@ const useSlider = ({ ref, tabIndex }: SliderHookOptions) => {
     const refCur = ref.current;
     const container = refCur?.children;
     if (container) {
-      console.log("Item:", container[tabIndex].getBoundingClientRect().top);
       setSliderInfo((prevState) => ({
         ...prevState,
         height: container[tabIndex].getBoundingClientRect().height,

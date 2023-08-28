@@ -86,7 +86,7 @@ const Stories = () => {
             onChange={handleSearchChange}
             value={searchQuery}
           />
-          <button className="absolute bg-[#D3D4D9] w-10 h-full flex justify-center items-center right-0 top-0 rounded-[0_6px_6px_0]">
+          <button aria-label="Search" className="absolute bg-[#D3D4D9] w-10 h-full flex justify-center items-center right-0 top-0 rounded-[0_6px_6px_0]">
             <img
               src="./assets/images/search.svg"
               alt=""
@@ -140,7 +140,7 @@ const Stories = () => {
             }`}
             aria-label="Previous Page"
           >
-            <img src="./assets/images/arrow-left.svg" alt="Previous" />
+            <img src="./assets/images/arrow-left.svg" alt="Previous" width={12} height={12} />
           </button>
           <button
             onClick={handleNextPage}
@@ -150,7 +150,7 @@ const Stories = () => {
             }`}
             aria-label="Next Page"
           >
-            <img src="./assets/images/arrow-right.svg" alt="Next" />
+            <img src="./assets/images/arrow-right.svg" alt="Next" width={12} height={12} />
           </button>
         </div>
       </div>

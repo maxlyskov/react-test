@@ -18,6 +18,7 @@ const Input: React.FC<InputProps> = ({
     value={value}
     onChange={onChange}
     placeholder={placeholder}
+    aria-label="Search"
     className={`px-3 py-2 border-[#A3A4AB)] border rounded-md outline-none text-sm ${classNames}`}
   />
 );

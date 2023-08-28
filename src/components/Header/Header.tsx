@@ -8,14 +8,19 @@ const Header = () => {
       <div className="flex items-center gap-5">
         <Burger />
         <Link to="/">
-          <img src="./assets/images/logo.svg" alt="" width={184} height={35} />
+          <img
+            src="./assets/images/logo.svg"
+            alt="storyteller"
+            width={184}
+            height={35}
+          />
         </Link>
       </div>
       <div className="flex items-center gap-5 lg:gap-8">
         <Link to="/">
           <img
             src="./assets/images/question.svg"
-            alt=""
+            alt="question"
             width={20}
             height={20}
           />
