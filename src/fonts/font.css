@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Euclid Circular B";
+  src: local("Euclid Circular B Medium"), local("Euclid-Circular-B-Medium"),
+    url("EuclidCircularB-Medium.woff2") format("woff2"),
+    url("EuclidCircularB-Medium.woff") format("woff"),
+    url("EuclidCircularB-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: local("Euclid Circular B Light"), local("Euclid-Circular-B-Light"),
+    url("EuclidCircularB-Light.woff2") format("woff2"),
+    url("EuclidCircularB-Light.woff") format("woff"),
+    url("EuclidCircularB-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: local("Euclid Circular B Regular"), local("Euclid-Circular-B-Regular"),
+    url("EuclidCircularB-Regular.woff2") format("woff2"),
+    url("EuclidCircularB-Regular.woff") format("woff"),
+    url("EuclidCircularB-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
