@@ -1,0 +1,30 @@
+[
+    {
+      "group": "schedule",
+      "items": [
+        { "id": 0, "label": "Schedule", "icon": "schedule.svg", "link": "schedule" },
+        { "id": 1, "label": "Analytics", "icon": "analytics.svg", "link": "analytics" },
+        { "id": 2, "label": "Stories", "icon": "stories.svg", "link": "stories" },
+        {
+          "id": 3,
+          "label": "Engagement Units",
+          "icon": "engagement-units.svg",
+          "link": "engagement"
+        },
+        { "id": 4, "label": "Ads", "icon": "ads.svg", "link": "ads" }
+      ]
+    },
+    {
+      "group": "cms",
+      "items": [
+        { "id": 6, "label": "CMS Users", "icon": "cms-users.svg", "link": "cms" },
+        { "id": 7, "label": "Roles", "icon": "roles.svg", "link": "roles" },
+        { "id": 8, "label": "Apps", "icon": "apps.svg", "link": "apps" }
+      ]
+    },
+    {
+      "group": "guide",
+      "items": [{ "id": 10, "label": "User guide", "icon": "user-guide.svg", "link": "guide" }]
+    }
+  ]
+  

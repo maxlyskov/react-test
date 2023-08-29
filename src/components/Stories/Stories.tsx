@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Table from "../Table/Table";
-import { tableData } from "../../sampleData";
 import Select from "../UI/Select";
 import Input from "../UI/Input";
+import { useFetch } from "../../hooks/useFetch";
+import { TableItem } from "../../types/TableTypes";
 
 const perPageOptions = [
   { value: "2", label: "2 rows" },
@@ -21,6 +22,14 @@ const Stories = () => {
   const [selectedStatus, setSelectedStatus] = useState<string>("All Statuses");
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [itemsPerPage, setItemsPerPage] = useState<number>(5);
+  const {
+    data: tableData,
+    loading,
+    error,
+  } = useFetch<TableItem>("tableData.json");
+
+  if (loading) return <p className="p-4">Loading...</p>;
+  if (error) return <p className="p-4">Error</p>;
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
@@ -86,7 +95,10 @@ const Stories = () => {
             onChange={handleSearchChange}
             value={searchQuery}
           />
-          <button aria-label="Search" className="absolute bg-[#D3D4D9] w-10 h-full flex justify-center items-center right-0 top-0 rounded-[0_6px_6px_0]">
+          <button
+            aria-label="Search"
+            className="absolute bg-[#D3D4D9] w-10 h-full flex justify-center items-center right-0 top-0 rounded-[0_6px_6px_0]"
+          >
             <img
               src="./assets/images/search.svg"
               alt=""
@@ -140,7 +152,12 @@ const Stories = () => {
             }`}
             aria-label="Previous Page"
           >
-            <img src="./assets/images/arrow-left.svg" alt="Previous" width={12} height={12} />
+            <img
+              src="./assets/images/arrow-left.svg"
+              alt="Previous"
+              width={12}
+              height={12}
+            />
           </button>
           <button
             onClick={handleNextPage}
@@ -150,7 +167,12 @@ const Stories = () => {
             }`}
             aria-label="Next Page"
           >
-            <img src="./assets/images/arrow-right.svg" alt="Next" width={12} height={12} />
+            <img
+              src="./assets/images/arrow-right.svg"
+              alt="Next"
+              width={12}
+              height={12}
+            />
           </button>
         </div>
       </div>

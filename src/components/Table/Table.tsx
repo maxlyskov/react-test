@@ -1,15 +1,6 @@
 import React from "react";
 import StatusBadge from "./StatusBadge";
-
-interface TableItem {
-  title: string;
-  publishDate: string | null;
-  pages: string[];
-  lastModified: string;
-  status: string;
-  liveFrom: string | null;
-  ends: string | null;
-}
+import { TableItem } from "../../types/TableTypes";
 
 interface IProps {
   currentItems: TableItem[];
@@ -60,7 +51,7 @@ const Table = ({ currentItems }: IProps) => {
         <tbody>
           {currentItems.map((item, index) => (
             <tr key={index} className="border-b dark:border-neutral-500">
-              <td  className="py-4 font-medium text-[var(--common-black-secondary)]">
+              <td className="py-4 font-medium text-[var(--common-black-secondary)]">
                 <p className="text-[var(--charts-blue)]">{item.title}</p>
                 <p className="text-[#A3A3A3] font-thin">
                   {item.publishDate || "(No publish date set)"}
@@ -116,7 +107,10 @@ const Table = ({ currentItems }: IProps) => {
               </td>
               <td className="px-5 py-4 text-[var(--common-black-secondary)] min-w-[180px]">
                 <div className="flex gap-5">
-                  <button aria-label="Delete" className="border-[var(--error)] border rounded-sm px-4 py-2 flex justify-center items-center transition-colors duration-200 hover:bg-red-50">
+                  <button
+                    aria-label="Delete"
+                    className="border-[var(--error)] border rounded-sm px-4 py-2 flex justify-center items-center transition-colors duration-200 hover:bg-red-50"
+                  >
                     <img
                       src="./assets/images/trash.svg"
                       alt=""
@@ -124,7 +118,10 @@ const Table = ({ currentItems }: IProps) => {
                       height={12}
                     />
                   </button>
-                  <button aria-label="Edit" className="bg-[#1DB56C] rounded-sm px-4 py-2 flex justify-center items-center gap-1 font-medium text-white transition-colors duration-200 hover:bg-green-700">
+                  <button
+                    aria-label="Edit"
+                    className="bg-[#1DB56C] rounded-sm px-4 py-2 flex justify-center items-center gap-1 font-medium text-white transition-colors duration-200 hover:bg-green-700"
+                  >
                     <img
                       src="./assets/images/edit.svg"
                       alt=""
